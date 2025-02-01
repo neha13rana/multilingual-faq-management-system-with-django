@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ List</title>
+</head>
+<body>
+    <h2>Frequently Asked Questions</h2>
+    <ul>
+        {% for faq in faqs %}
+            <li>
+                <strong>Q: </strong>{{ faq.question }}<br>
+                <strong>A: </strong>{{ faq.answer }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
