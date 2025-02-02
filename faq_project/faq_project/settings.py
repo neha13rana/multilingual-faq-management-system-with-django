@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     "rest_framework",       
     "ckeditor",           
     "django_redis",     
-    "faq_app",      
+    "faq_app",   
+    "pytest",   
 ]
 
 MIDDLEWARE = [
