@@ -7,7 +7,7 @@
       
       -> Go to the main directory (faq_project)
       
-      -> write this to activate the virtual environment in windows write **"venv\Scripts\activate"** or in linux write "source venv/bin/activate"
+      -> write this to activate the virtual environment in windows write "venv\Scripts\activate" or in linux write "source venv/bin/activate"
       
       -> Run python manage.py runserver to run a server.
 
