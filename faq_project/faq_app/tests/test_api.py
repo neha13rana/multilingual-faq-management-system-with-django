@@ -1,7 +1,6 @@
 from rest_framework.test import APIClient
 import pytest
 
-
 @pytest.mark.django_db
 def test_api_faq_list():
     client = APIClient()
