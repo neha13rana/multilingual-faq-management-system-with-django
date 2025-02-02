@@ -2,13 +2,11 @@
 
 
 1) Installation Steps :
-  -> Create Virtual Environment :  **python -m venv venv **
-   In windows write **"venv\Scripts\activate"** or in linux write "source venv/bin/activate"
-  -> Install Dependencies : pip install django djangorestframework django-ckeditor googletrans==4.0.0-rc1 redis django-redis flake8 pytest
-     pip install pytest pytest-django flake8, pip install --upgrade django-ckeditor.
-
+   
 -> Download this folder
+
 -> write this to activate the virtual environment in windows write **"venv\Scripts\activate"** or in linux write "source venv/bin/activate"
+
 -> Run python manage.py runserver to run a server.
 
 2) API Usage:
