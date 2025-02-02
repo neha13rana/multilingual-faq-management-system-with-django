@@ -3,13 +3,13 @@
 
 **1) Installation Steps :**
    
--> Download this folder
-
--> Go to the main directory (faq_project)
-
--> write this to activate the virtual environment in windows write **"venv\Scripts\activate"** or in linux write "source venv/bin/activate"
-
--> Run python manage.py runserver to run a server.
+      -> Download this folder
+      
+      -> Go to the main directory (faq_project)
+      
+      -> write this to activate the virtual environment in windows write **"venv\Scripts\activate"** or in linux write "source venv/bin/activate"
+      
+      -> Run python manage.py runserver to run a server.
 
 **2) API Usage:**
    
@@ -50,10 +50,10 @@
 
 **3) Unit testing is done(using pytest)**
    
-      1) API testing on 1) faqlist with lang parameter, submit_faq, faq_list
-         
-      2) model testing on 1) faq_creation 2) faq_translation
-      ![image](https://github.com/user-attachments/assets/bf9ee7ad-cc5a-4336-9423-0b48bacba0be)
+   1) API testing on 1) faqlist with lang parameter, submit_faq, faq_list
+      
+   2) model testing on 1) faq_creation 2) faq_translation
+   ![image](https://github.com/user-attachments/assets/bf9ee7ad-cc5a-4336-9423-0b48bacba0be)
 
 **4) Connected the Redis for cache**
 
