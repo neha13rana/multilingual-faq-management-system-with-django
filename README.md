@@ -1,87 +1,157 @@
 # Multilingual FAQ Management System with Django
 
+## Overview
+This project provides a robust solution for managing FAQs in multiple languages with a user-friendly interface. It includes advanced features such as WYSIWYG editor support, API endpoints for multilingual operations, caching for improved performance, and a well-documented workflow for deployment and testing.
 
-**1) Installation Steps :**
-   
-      -> Download this folder
-      
-      -> Go to the main directory (faq_project)
-      
-      -> write this to activate the virtual environment in windows write "venv\Scripts\activate" or in linux write "source venv/bin/activate"
-      
-      -> Run python manage.py runserver to run a server.
+---
 
-**2) API Usage:**
-   
-   **Admin Panel**
-   
-   --> http://localhost:8000/admin/
-   ![image](https://github.com/user-attachments/assets/9947f9bc-9d65-484a-8053-a62a00883726)
+## Table of Contents
+1. [Installation](#installation)
+2. [Features](#features)
+3. [API Usage](#api-usage)
+4. [Unit Testing](#unit-testing)
+5. [Caching with Redis](#caching-with-redis)
+6. [Screenshots](#screenshots)
+7. [Contributing](#contributing)
 
-  --> http://localhost:8000/admin/faq_app/faq/
-   ![image](https://github.com/user-attachments/assets/b4d83a6d-0aab-4867-bd38-5b731d7ff693)
-   
-  -->  Q and A with CKeditor
-   ![image](https://github.com/user-attachments/assets/efa3c23a-bf16-4434-bb73-f22c63ed27cf)
-   
-   --> Translated Q and A
-   ![image](https://github.com/user-attachments/assets/27105d92-5914-40ed-b2bf-43924f397814)
+---
 
-   
-   **Faq-List**
+## Installation
 
-   --> FAQ list is open by using this url : 
-   
-   http://localhost:8000/faq_app/faq-list/
-   
-   ![image](https://github.com/user-attachments/assets/527a2977-28d5-4a4b-88cb-5973ddc79f4c)
+Follow these steps to set up the project:
 
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/neha13rana/multilingual-faq-management-system-with-django.git
+   cd multilingual-faq-management-system-with-django
+   ```
 
-   **User added FAQS**
-   
-   --> User can Sumbit FAQ by using this url : 
-   
-   http://localhost:8000/faq_app/submit/
-   
-   ![image](https://github.com/user-attachments/assets/3799bf14-2032-4ed1-9581-98068d2a5b5b)
+2. Activate the virtual environment:
+   - On **Windows**:
+     ```bash
+     venv\Scripts\activate
+     ```
+   - On **Linux/Mac**:
+     ```bash
+     source venv/bin/activate
+     ```
 
-   --> Updated FAQS 
-   
-   ![image](https://github.com/user-attachments/assets/c0b32f42-a42e-4837-9b7d-4acbc447d2ac)
+3. Run the server:
+   ```bash
+   python manage.py runserver
+   ```
 
-   **multilingual support** 
-   
-   --> Select language(en, hi, bn) by using this url : 
-   
-   http://localhost:8000/faq_app/faq-list/?lang=hi
-   
-   ![image](https://github.com/user-attachments/assets/4e742c05-9fe7-4eb6-8ec5-dbe8f4e91298)
+---
 
+## Features
 
-**3) Unit testing is done(using pytest)**
-   
-   1) API testing on 1) faqlist with lang parameter, submit_faq, faq_list
-      
-   2) model testing on 1) faq_creation 2) faq_translation
-      
-   ![image](https://github.com/user-attachments/assets/bf9ee7ad-cc5a-4336-9423-0b48bacba0be)
+- **Multilingual FAQ Management**: Add, update, and retrieve FAQs in multiple languages.
+- **WYSIWYG Editor Integration**: Format FAQ answers with the django-ckeditor.
+- **Dynamic API**: Language support using query parameters (`?lang=en`, `?lang=hi`, etc.).
+- **Caching**: Redis-based caching for faster performance.
+- **Admin Dashboard**: User-friendly admin panel for managing FAQs.
+- **Testing**: Comprehensive unit tests for models and APIs.
 
-**4) Connected the Redis for cache**
+---
 
-   using this command docker run --name redis-container -p 6379:6379 -d redis, docker ps
-   
-![image](https://github.com/user-attachments/assets/d0da5b77-7060-4658-a0ee-bf1c04113c09)
+## API Usage
 
+### Admin Panel
+- Access the admin panel:
+  ```
+  http://localhost:8000/admin/
+  ```
+  Use this panel to manage FAQs with a rich-text editor.
 
+### FAQ List
+- Retrieve FAQs:
+  ```
+  http://localhost:8000/faq_app/faq-list/
+  ```
+- Retrieve FAQs in a specific language:
+  ```
+  http://localhost:8000/faq_app/faq-list/?lang=hi
+  ```
 
+### Submit FAQ
+- Add a new FAQ:
+  ```
+  http://localhost:8000/faq_app/submit/
+  ```
 
+---
 
+## Unit Testing
 
+- **Framework**: `pytest`
+- **Test Cases**:
+  - API testing:
+    - `faqlist` with language parameter
+    - `submit_faq`
+    - `faq_list`
+  - Model testing:
+    - FAQ creation
+    - FAQ translation
 
-   
+Run the tests:
+```bash
+pytest
+```
 
+---
 
+## Caching with Redis
 
+Enable caching for performance enhancements:
 
+1. Start a Redis container using Docker:
+   ```bash
+   docker run --name redis-container -p 6379:6379 -d redis
+   ```
+2. Verify the container is running:
+   ```bash
+   docker ps
+   ```
 
+---
 
+## Screenshots
+
+### Admin Panel
+![Admin Panel](https://github.com/user-attachments/assets/9947f9bc-9d65-484a-8053-a62a00883726)
+
+### FAQ Management
+![FAQ Management](https://github.com/user-attachments/assets/b4d83a6d-0aab-4867-bd38-5b731d7ff693)
+
+### WYSIWYG Editor
+![WYSIWYG Editor](https://github.com/user-attachments/assets/efa3c23a-bf16-4434-bb73-f22c63ed27cf)
+
+### Multilingual Support
+![Multilingual Support](https://github.com/user-attachments/assets/4e742c05-9fe7-4eb6-8ec5-dbe8f4e91298)
+
+---
+
+## Contributing
+
+Contributions are welcome! To contribute:
+
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature-name
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m "feat: Add new feature"
+   ```
+4. Push to your branch:
+   ```bash
+   git push origin feature-name
+   ```
+5. Submit a pull request.
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
