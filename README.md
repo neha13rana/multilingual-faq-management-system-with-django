@@ -15,10 +15,10 @@
    
    **Admin Panel**
    
-   --> curl http://localhost:8000/admin/
+   --> http://localhost:8000/admin/
    ![image](https://github.com/user-attachments/assets/9947f9bc-9d65-484a-8053-a62a00883726)
 
-  --> curl http://localhost:8000/admin/faq_app/faq/
+  --> http://localhost:8000/admin/faq_app/faq/
    ![image](https://github.com/user-attachments/assets/b4d83a6d-0aab-4867-bd38-5b731d7ff693)
    
   -->  Q and A with CKeditor
