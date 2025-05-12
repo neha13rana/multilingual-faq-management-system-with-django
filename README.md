@@ -131,23 +131,4 @@ Enable caching for performance enhancements:
 
 ---
 
-## Contributing
 
-Contributions are welcome! To contribute:
-
-1. Fork the repository.
-2. Create a new branch:
-   ```bash
-   git checkout -b feature-name
-   ```
-3. Commit your changes:
-   ```bash
-   git commit -m "feat: Add new feature"
-   ```
-4. Push to your branch:
-   ```bash
-   git push origin feature-name
-   ```
-5. Submit a pull request.
-
----
