@@ -1,7 +1,7 @@
 # Multilingual FAQ Management System with Django
 
 ## Overview
-This project provides a robust solution for managing FAQs in multiple languages with a user-friendly interface. It includes advanced features such as WYSIWYG editor support, API endpoints for multilingual operations, caching for improved performance, and a well-documented workflow for deployment and testing.
+This project provides a robust solution for managing FAQs in multiple languages. It includes advanced features such as WYSIWYG editor support, API endpoints for multilingual operations, caching for improved performance, and a well-documented workflow for deployment and testing.
 
 ---
 
